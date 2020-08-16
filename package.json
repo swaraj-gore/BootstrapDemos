@@ -1,0 +1,14 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "This is confusion website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Swaraj",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
