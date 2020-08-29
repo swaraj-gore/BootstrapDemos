@@ -52,3 +52,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal .modal-header {
+  color: floralwhite;
+  background: #512dab; }
+  .modal .modal-header .fa-times:hover {
+    color: floralwhite; }
+  .modal .modal-header .fa-times {
+    background: #512dab;
+    color: #d1c4e9; }
+
+.modal .modal-body {
+  background: #d1c4e9; }
