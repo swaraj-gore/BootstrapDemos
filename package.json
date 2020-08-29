@@ -4,9 +4,12 @@
   "description": "This is confusion website",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Swaraj",
   "license": "ISC",
@@ -15,7 +18,10 @@
     "url": "https://github.com/swaraj-gore/BootstrapDemos.git"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
